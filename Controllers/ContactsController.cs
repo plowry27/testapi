@@ -18,7 +18,7 @@ namespace TodoApi.Controllers
         {
             Contact con = new Contact() {firstname = "Peter", lastname="Lowry"};
             var info = con.GetContactInfo();
-            return new string[] { "Peter", "Lowry" };
+            return new string[] { info.firstname, info.lastname };
         }
 
         // GET api/values/5
