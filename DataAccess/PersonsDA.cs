@@ -46,25 +46,25 @@ namespace TodoApi.DataAccess
 
         }
     
-        static public int AddContactInfo(int PersonID, string firstname, string lastname, string address, string city, string phone)
+        static public int AddContactInfo(int PersonID, string firstname, string lastname, string address, string city)
         {
             var cs = BuildConnectionString();
             
             SqlConnection objCon = new SqlConnection(cs.ConnectionString);
-            SqlCommand objCmd = new SqlCommand("sp_Add_Person", objCon);
+            SqlCommand objCmd = new SqlCommand("sp_AddPerson", objCon);
             objCmd.CommandType = CommandType.StoredProcedure;
             objCmd.Parameters.Add(new SqlParameter("@FirstName", SqlDbType.VarChar, 20));
             objCmd.Parameters.Add(new SqlParameter("@LastName", SqlDbType.VarChar, 20));
-            objCmd.Parameters.Add(new SqlParameter("@PersonId", SqlDbType.Int, 4));
+            objCmd.Parameters.Add(new SqlParameter("@PersonID", SqlDbType.Int, 4));
             objCmd.Parameters.Add(new SqlParameter("@Address", SqlDbType.VarChar, 20));
             objCmd.Parameters.Add(new SqlParameter("@City", SqlDbType.VarChar, 20));
-            objCmd.Parameters.Add(new SqlParameter("@Phone", SqlDbType.VarChar, 20));
-            objCmd.Parameters["@PersonId"].Value = PersonID;
+            
+            objCmd.Parameters["@PersonID"].Value = PersonID;
             objCmd.Parameters["@FirstName"].Value = firstname;
             objCmd.Parameters["@LastName"].Value = lastname;
             objCmd.Parameters["@Address"].Value = address;
             objCmd.Parameters["@City"].Value = city;
-            objCmd.Parameters["@Phone"].Value = phone;
+            
             
             objCon.Open();
             objCmd.ExecuteNonQuery();

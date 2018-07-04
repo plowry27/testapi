@@ -22,7 +22,7 @@ namespace TodoApi.Contacts
         public string AddContactInfo()
         {
 
-            DataAccess.PersonsDS.AddContactInfo(PersonID, firstname, lastname,phone,address,city);
+            DataAccess.PersonsDS.AddContactInfo(PersonID, firstname, lastname, address,city);
             return "1";
 
         }
