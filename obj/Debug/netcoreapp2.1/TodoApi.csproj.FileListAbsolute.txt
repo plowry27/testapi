@@ -26,3 +26,17 @@ C:/Code Projects/coreAPI1/TodoApi/obj/Debug/netcoreapp2.1/TodoApi.pdb
 /home/pcl/Projects/TodoApiDB/obj/Debug/netcoreapp2.1/TodoApi.RazorTargetAssemblyInfo.cache
 /home/pcl/Projects/TodoApiDB/obj/Debug/netcoreapp2.1/TodoApi.dll
 /home/pcl/Projects/TodoApiDB/obj/Debug/netcoreapp2.1/TodoApi.pdb
+C:\Code Projects\testapi\bin\Debug\netcoreapp2.1\TodoApi.deps.json
+C:\Code Projects\testapi\bin\Debug\netcoreapp2.1\TodoApi.runtimeconfig.json
+C:\Code Projects\testapi\bin\Debug\netcoreapp2.1\TodoApi.runtimeconfig.dev.json
+C:\Code Projects\testapi\bin\Debug\netcoreapp2.1\TodoApi.dll
+C:\Code Projects\testapi\bin\Debug\netcoreapp2.1\TodoApi.pdb
+C:\Code Projects\testapi\obj\Debug\netcoreapp2.1\TodoApi.csprojAssemblyReference.cache
+C:\Code Projects\testapi\obj\Debug\netcoreapp2.1\TodoApi.csproj.CoreCompileInputs.cache
+C:\Code Projects\testapi\obj\Debug\netcoreapp2.1\TodoApi.RazorAssemblyInfo.cache
+C:\Code Projects\testapi\obj\Debug\netcoreapp2.1\TodoApi.RazorAssemblyInfo.cs
+C:\Code Projects\testapi\obj\Debug\netcoreapp2.1\TodoApi.AssemblyInfoInputs.cache
+C:\Code Projects\testapi\obj\Debug\netcoreapp2.1\TodoApi.AssemblyInfo.cs
+C:\Code Projects\testapi\obj\Debug\netcoreapp2.1\TodoApi.RazorTargetAssemblyInfo.cache
+C:\Code Projects\testapi\obj\Debug\netcoreapp2.1\TodoApi.dll
+C:\Code Projects\testapi\obj\Debug\netcoreapp2.1\TodoApi.pdb

@@ -16,7 +16,7 @@ namespace TodoApi.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            Contact con = new Contact() {firstname = "Peter", lastname="Lowry"};
+            Contact con = new Contact() {firstname = "Elizabeth", lastname="Lowry"};
             var info = con.GetContactInfo();
             return new string[] { info.firstname, info.lastname };
         }
