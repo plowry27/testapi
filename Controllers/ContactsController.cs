@@ -34,8 +34,8 @@ namespace TodoApi.Controllers
         [HttpPost]
         public string Post([FromBody] Contact contact)
         {
-            contact.AddContactInfo();
-            return "1";
+            var retcode = contact.AddContactInfo();
+            return retcode;
         }
 
         // PUT api/values/5
