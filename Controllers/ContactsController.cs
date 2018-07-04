@@ -25,7 +25,6 @@ namespace TodoApi.Controllers
         [HttpGet("{fn}/{ln}")]
         public ActionResult<Contact> Get(string fn, string ln)
         {
-        
             Contact con = new Contact() {firstname = fn, lastname=ln};
             var info = con.GetContactInfo();
             return info;
@@ -36,8 +35,7 @@ namespace TodoApi.Controllers
         public string Post([FromBody] Contact contact)
         {
             contact.AddContactInfo();
-            var newphone = contact.phone.Replace("-", ".");
-            return newphone;
+            return "1";
         }
 
         // PUT api/values/5
