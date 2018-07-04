@@ -4,3 +4,9 @@
 /bin/Debug/netcoreapp2.1/TodoApi.dll
 /bin/Debug/netcoreapp2.1/TodoApi.deps.json
 /obj/Debug/netcoreapp2.1/TodoApi.csproj.CoreCompileInputs.cache
+obj/Debug/netcoreapp2.1/TodoApi.csproj.CoreCompileInputs.cache
+obj/Debug/netcoreapp2.1/TodoApi.assets.cache
+obj/project.assets.json
+obj/TodoApi.csproj.nuget.g.targets
+obj/TodoApi.csproj.nuget.g.props
+obj/TodoApi.csproj.nuget.cache

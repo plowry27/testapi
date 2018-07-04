@@ -43,7 +43,6 @@ namespace TodoApi.DataAccess
             }
 
             return contact;
-
         }
     
         static public int AddContactInfo(int PersonID, string firstname, string lastname, string address, string city)
