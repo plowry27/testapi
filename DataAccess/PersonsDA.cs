@@ -39,6 +39,7 @@ namespace TodoApi.DataAccess
             }
             catch (SqlException err)
             {
+                contact.lastname = err.Data.ToString();
                 //Fancy error handling here
             }
 
