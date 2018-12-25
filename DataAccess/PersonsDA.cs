@@ -11,6 +11,8 @@ namespace TodoApi.DataAccess
         static public Contact GetPersonDA(string FirstName, string LastName)
         {            
             //var strConnectionString = "Server=tcp:pcldb.database.windows.net,1433;Initial Catalog=pcldb;Persist Security Info=False;User ID={pcl};Password={G0DucksQuack};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30";
+            
+            
             var cs = BuildConnectionString();
             
             SqlDataReader objReader;
@@ -75,6 +77,8 @@ namespace TodoApi.DataAccess
 
         static private SqlConnectionStringBuilder BuildConnectionString()
         {
+//Server=tcp:k8twep9t9i.database.windows.net,1433;Initial Catalog=b2b;Persist Security Info=False;User ID={your_username};Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
+
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
                 builder.DataSource = "pcldb.database.windows.net"; 
                 builder.UserID = "pcl";            
@@ -82,6 +86,6 @@ namespace TodoApi.DataAccess
                 builder.InitialCatalog = "pcldb";
 
                 return builder;
-        }
+        }        
     }
 }

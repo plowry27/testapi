@@ -21,12 +21,12 @@ namespace TodoApi.Controllers
             return new string[] { info.firstname, info.lastname };
         }
 
-        [HttpGet("GetContactInfo")]
-        public ActionResult<IEnumerable<string>> GetContactInfo()
+        [HttpGet("GetContactInfo/{fn}/{ln}")]
+        public ActionResult<IEnumerable<string>> GetContactInfo(string fn, string ln)
         {       
-            Contact con = new Contact() {firstname = "Elizabeth", lastname="Lowry"};
+            Contact con = new Contact() {firstname = fn, lastname=ln};
             var info = con.GetContactInfo();
-            return new string[] { info.firstname, info.lastname };
+            return new string[] { info.firstname, info.lastname, info.address, info.city };
         }
 
         // GET api/values/5
