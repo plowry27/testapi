@@ -64,6 +64,12 @@ namespace TodoApi.Controllers
         {
             return "Worked";
         }
-    }
 
+        [HttpGet]
+        [Route("q/w/e/makedo")]        
+        public string testapimethod1()
+        {
+            return "Worked";
+        }
     }
+}
