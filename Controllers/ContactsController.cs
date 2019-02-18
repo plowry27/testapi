@@ -57,5 +57,13 @@ namespace TodoApi.Controllers
         public void Delete(int id)
         {
         }
+
+        [HttpGet]
+        [Route("makedo")]        
+        public string testapimethod()
+        {
+            return "Worked";
+        }
+
     }
 }
